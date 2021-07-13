@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invision_App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+	.container {
+		text-align: center;
+		
+	}
+	.form-control{
+     box-sizing: border-box;
+     height: 44px;
+     width: 470px;
+     border: 1px solid #DEE4E7;
+     border-radius: 8px;
+     background-color: #FFFFFF;
+    }
+
+    .btn-btn-primary{
+     box-sizing: border-box;
+     height: 44px;
+     width: 470px;
+     border: 1px solid #166EBF;
+     font-family: "Source Sans Pro";
+     border-radius: 8px;
+     background-color: #166EBF;
+     color: #ffffff;
+    }
+    .btn-btn-primary:hover {background-color:#106bb5;}
+
+     label{
+     height:80px;
+     color: #666666;
+     font-family:"Source Sans Pro";
+     font-size: 16px;
+     letter-spacing: 0;
+     line-height: 40px;
+     text-align:left;
+    }
+    .Login{
+     height: 40px;
+     color: #000000;
+     font-family: "Source Sans Pro";
+     font-size: 32px;
+     letter-spacing: 0;
+     line-height: 30px;
+     text-align: center;
+     margin-top: 50px;
+    }
+    .copyright-2021{
+     height: 20px;
+     color: #666666;
+     font-family: "Source Sans Pro";
+     font-size: 16px;
+     letter-spacing: 0;
+     line-height: 400px;
+     text-align: center;
+    }
+    img{
+     margin-top:200px;
+    }
+    .sign-in {     
+     height: 20px;
+     color: #666666;
+     font-family: "Source Sans Pro";
+     font-size: 16px;
+     letter-spacing: 0;
+     line-height: 5px;
+    }
+    .mySlides {display:none;}
+    .button {
+    background-color:gray; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin: -30px;
+    }
+    .button5:hover {
+     background-color:gray;
+     color: white;
+     width: 80px;
+    }
+   .button5 {
+   	border-radius: 50%;
+    }
+    button{
+     border:none;
+     color: white;
+     background-color:#98a39c;
+    }
+    button:hover {
+    background-color:#505955;
+    }
+
+</style>
+
+<body>
+	<a href="1.html"><button class="button button5 w3-gray w3-display-left" onclick="plusDivs(-1)">&#10094;</button></a>
+	<a href="2.html"><button class="button button5 w3-gray w3-display-right" onclick="plusDivs(1)">&#10095;</button></a>
+	<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+	<div class="container">
+		<img src="logo.png">
+		<h1 class="Login">Login</h1>
+		<p class="sign-in">Sign in using store email address and password</p>
+		<div class="form-group">
+			<label for="email">&emsp;Email address<input type="email" class="form-control" id="email" required></label>
+		</div>
+		<div class="form-group">
+			<label for="pwd">&emsp;Password<input type="password" class="form-control" id="pwd" required></label>
+		</div>
+		<a href="2.html"><button type="submit" class="btn-btn-primary">Sign in</button></a>
+		<p class="copyright-2021">Copyright@2021.Capillary technologies Pvt.Ltd.All Rights Reserved</p>
+	</div>
+</body>
+</html>
